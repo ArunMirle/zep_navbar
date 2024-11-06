@@ -14,6 +14,35 @@
   }
 }
 
+/* Define the custom grid layout */
+.grid-rows-layout {
+  grid-template-rows: auto 1fr;
+  /* Topbar height, and then main content */
+}
+
+.grid-cols-layout {
+  grid-template-columns: 16rem 1fr;
+  /* Navbar width, and then main content */
+}
+
+.scrollbar-hide {
+  overflow: -moz-hidden-unscrollable;
+  /* Firefox */
+  overflow: hidden;
+  /* Hide scrollbar */
+  overflow-y: scroll;
+  /* Allows scrolling */
+  -ms-overflow-style: none;
+  /* Internet Explorer and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+  /* Safari and Chrome */
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
